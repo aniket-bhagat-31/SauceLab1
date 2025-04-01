@@ -21,7 +21,7 @@ public class LoginPageTest extends TestBase{
 		login = new LoginPage();
 	}
 
-	@Test(enabled =false)
+	@Test(enabled =true)
 	public void verifyTitleTest() {
 		String actRes = login.verifyTitle();
 		String expRes = "Swag Labs";
@@ -34,12 +34,12 @@ public class LoginPageTest extends TestBase{
 		assertEquals(actRes, expRes);
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void verifySwagLabLogoTest() {
 		boolean actRes = login.verifySwagLabLogo();
 		assertEquals(true, actRes);
 	}
-	@Test(dependsOnMethods="verifySwagLabLogoTest", enabled =false)
+	@Test(dependsOnMethods="verifySwagLabLogoTest", enabled =true)
 	public void verifyLoginTest() throws Exception {
 		Thread.sleep(2000);
 		String actRes =login.verifyLogin();

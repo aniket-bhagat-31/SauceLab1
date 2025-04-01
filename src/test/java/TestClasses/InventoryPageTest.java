@@ -40,10 +40,10 @@ public class InventoryPageTest extends TestBase{
 		System.out.println("Execution started");
 		SoftAssert soft = new SoftAssert();
 		boolean actRes = inventory.verifyProductsLogo();
-		soft.assertEquals(false, actRes);
-		System.out.println("Execution ended");
-		System.out.println(10/0);
-		System.out.println(null+"add");
+		soft.assertEquals(true, actRes);
+//		System.out.println("Execution ended");
+//		System.out.println(10/0);
+//		System.out.println(null+"add");
 //		soft.assertAll();
 		
 		
@@ -53,10 +53,11 @@ public class InventoryPageTest extends TestBase{
 		boolean actRes = inventory.verifyMenuButton();
 		Assert.assertEquals(true, actRes);
 	}
+	
 	@Test
 	public void verifyCartFunctionalityTest() {
 		String actRes = inventory.verifyCartFunctionality();
-		String expRes = "https://www.saucedemo.com/cart.html1";
+		String expRes = "https://www.saucedemo.com/cart.html";
 		Assert.assertEquals(actRes, expRes);
 		Reporter.log("actual String: " + actRes);
 

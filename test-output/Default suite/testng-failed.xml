@@ -6,9 +6,8 @@
       <class name="TestClasses.InventoryPageTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyCartFunctionalityTest"/>
-          <include name="verifyProductsLogoTest"/>
           <include name="setup"/>
+          <include name="verifyMenuButtonTest"/>
         </methods>
       </class> <!-- TestClasses.InventoryPageTest -->
     </classes>
