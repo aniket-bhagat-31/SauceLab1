@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestClasses.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyLoginTest"/>
+          <include name="verifySwagLabLogoTest"/>
+          <include name="closeBrowser"/>
+          <include name="verifyTitleTest"/>
+        </methods>
+      </class> <!-- TestClasses.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
