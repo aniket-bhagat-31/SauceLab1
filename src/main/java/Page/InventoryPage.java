@@ -28,7 +28,9 @@ public class InventoryPage extends TestBase {
 		Utility.selectClass(sort, "Price (high to low)");
 //		Select s = new Select(sort);
 //		s.selectByVisibleText("Price (high to low)");
+		driver.switchTo().alert().accept();
 		sauceLabOneSide.click();
+		driver.switchTo().alert().accept();
 		sauceLabBikeLight.click();
 		return cartCount.getText();
 	}
