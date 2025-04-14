@@ -26,9 +26,8 @@ public class InventoryPage extends TestBase {
 	}
 	public String verifySort() {
 		Utility.selectClass(sort, "Price (high to low)");
-//		Select s = new Select(sort);
-//		s.selectByVisibleText("Price (high to low)");
-		driver.switchTo().alert().accept();
+		Select s = new Select(sort);
+		s.selectByVisibleText("Price (high to low)");
 		sauceLabOneSide.click();
 		driver.switchTo().alert().accept();
 		sauceLabBikeLight.click();

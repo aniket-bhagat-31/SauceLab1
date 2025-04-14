@@ -26,7 +26,6 @@ public class CartPageTest extends TestBase {
 		cart = new CartPage();
 		login.verifyLogin();
 		inventory.verifyCartFunctionality();
-		driver.switchTo().alert().accept();
 	}
 	@Test
 	public void verifyCartCountTest()

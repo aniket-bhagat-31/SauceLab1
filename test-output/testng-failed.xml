@@ -10,7 +10,6 @@
           <include name="verifyContinueBtnTest"/>
           <include name="verifyCartCountTest"/>
           <include name="verifyCartAfterProductRemovalTest"/>
-          <include name="verifyAppLogoTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestClasses.CartPageTest -->
