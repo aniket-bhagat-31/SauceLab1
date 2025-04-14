@@ -48,8 +48,8 @@ public class InventoryPageTest extends TestBase{
 		
 		
 	}
-	@Test(enabled=false, groups="sanity")
-	public void verifyMenuButtonTest() {
+	@Test(groups="sanity")
+	public void verifyMenuButtonTest() throws Exception {
 		boolean actRes = inventory.verifyMenuButton();
 		Assert.assertEquals(true, actRes);
 	}

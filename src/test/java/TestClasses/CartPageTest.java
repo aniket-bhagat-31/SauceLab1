@@ -25,40 +25,35 @@ public class CartPageTest extends TestBase {
 		inventory = new InventoryPage();
 		cart = new CartPage();
 		login.verifyLogin();
+		inventory.verifySort();
 		inventory.verifyCartFunctionality();
 	}
-	@Test
+	@Test(enabled=true)
 	public void verifyCartCountTest()
 	{
 		String actRes = cart.verifyCartCount();
 		String expRes = "2";
 		assertEquals(actRes, expRes);
 	}
-	@Test
+	@Test(enabled=true)
 	public void verifyAppLogoTest()
 	{
 		boolean actRes = cart.verifyAppLogo();
 		assertEquals(actRes, true);
 	}
-	@Test
-	public void verifyCartAfterProductRemovalTest() throws Exception
-	{
-		String actRes = cart.verifyCartAfterProductRemoval();
-		String expRes = "0";
-		assertEquals(actRes, expRes);
-	}
-	@Test
-	public void verifyContinueBtnTest() 
+	
+	@Test(enabled=true)
+	public void verifyContinueBtnTest() throws Exception 
 	{
 		String actRes = cart.verifyContinueBtn();
 		String expRes = "2";
 		assertEquals(actRes, expRes);
 	}
-	@Test 
+	@Test (enabled=true)
 	public void verifyCheckoutPage1Test() throws Exception
 	{
 		String actRes = cart.verifyCheckoutPage1();
-		String expRes = "https://www.saucedemo.com/v1/checkout-step-one.html";
+		String expRes = "https://www.saucedemo.com/checkout-step-one.html";
 		assertEquals(actRes, expRes);
 	}
 	

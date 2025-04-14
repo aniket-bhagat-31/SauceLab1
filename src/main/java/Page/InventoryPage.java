@@ -29,7 +29,6 @@ public class InventoryPage extends TestBase {
 		Select s = new Select(sort);
 		s.selectByVisibleText("Price (high to low)");
 		sauceLabOneSide.click();
-		driver.switchTo().alert().accept();
 		sauceLabBikeLight.click();
 		return cartCount.getText();
 	}
@@ -38,8 +37,9 @@ public class InventoryPage extends TestBase {
 		return productsLogo.isDisplayed();
 	}
 	
-	public boolean verifyMenuButton() {
+	public boolean verifyMenuButton() throws Exception {
 		menu.click();
+		Thread.sleep(2000);
 		return links.isDisplayed();
 	}
 	public String verifyCartFunctionality() {

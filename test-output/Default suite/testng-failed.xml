@@ -5,10 +5,7 @@
     <classes>
       <class name="TestClasses.CartPageTest">
         <methods>
-          <include name="verifyCheckoutPage1Test"/>
           <include name="closeBrowser"/>
-          <include name="verifyContinueBtnTest"/>
-          <include name="verifyCartCountTest"/>
           <include name="verifyCartAfterProductRemovalTest"/>
           <include name="setup"/>
         </methods>
