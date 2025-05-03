@@ -38,7 +38,7 @@ public class FinishPageTest extends TestBase{
 		inventory.verifyCartFunctionality();
 		cart.verifyCheckoutPage1();
 		checkout1.verifyCustomerInfo();
-		
+		checkout2.verifyFinishPage();
 	}
 	
 	@Test
