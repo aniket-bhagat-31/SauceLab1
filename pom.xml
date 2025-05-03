@@ -10,12 +10,13 @@
     <artifactId>selenium-java</artifactId>
     <version>4.13.0</version>
 </dependency>
-	<dependency>
+<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.0.0</version>
+    <version>7.9.0</version> <!-- or latest version -->
     <scope>test</scope>
 </dependency>
+
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>

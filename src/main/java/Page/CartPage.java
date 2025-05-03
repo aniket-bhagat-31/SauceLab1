@@ -32,7 +32,7 @@ public class CartPage extends TestBase {
 		return appLogo.isDisplayed();
 	}
 	
-	public String verifyContinueBtn() throws Exception 
+	public String verifyContinueShoppingBtn() throws Exception 
 	{
 		Thread.sleep(1000);
 		removeBtn.click();

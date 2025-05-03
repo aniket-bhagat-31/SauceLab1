@@ -1,0 +1,4 @@
+verifyAppLogoTest - PASSED
+verifyCartCountTest - PASSED
+verifyCheckoutPage1Test - PASSED
+verifyContinueBtnTest - PASSED

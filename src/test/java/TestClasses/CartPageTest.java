@@ -10,7 +10,10 @@ import Base.TestBase;
 import Page.CartPage;
 import Page.InventoryPage;
 import Page.LoginPage;
-import dev.failsafe.internal.util.Assert;
+import org.testng.annotations.Listeners;
+import Utility.TestResultLogger;
+
+@Listeners(TestResultLogger.class)
 
 public class CartPageTest extends TestBase {
 	
@@ -45,7 +48,7 @@ public class CartPageTest extends TestBase {
 	@Test(enabled=true)
 	public void verifyContinueBtnTest() throws Exception 
 	{
-		String actRes = cart.verifyContinueBtn();
+		String actRes = cart.verifyContinueShoppingBtn();
 		String expRes = "2";
 		assertEquals(actRes, expRes);
 	}
